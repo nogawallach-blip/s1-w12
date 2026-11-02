@@ -3,11 +3,11 @@ import java.util.Random;
 public class Dice3 {
 
     private Random randGen;
-    private BarChart6 bars;
+    private BarChart12 bars;
 
     public Dice3 ( ) {
         randGen = new Random ( );
-        bars = new BarChart6();
+        bars = new BarChart12();
     }
     public int forbiddenRoll(int forbidden){
 	//your code here.

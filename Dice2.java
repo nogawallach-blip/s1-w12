@@ -12,7 +12,7 @@ public class Dice2 {
 
    public int nextRoll( ) {
       // You supply this code.
-return -1; 
+      return randGen.nextInt(6) + 2 + randGen.nextInt(6); 
    }
 	
    public void tester (int howMany) {
@@ -36,4 +36,8 @@ return -1;
      }
    }
   
+   public static void main(String[] args) {
+      Dice2 d = new Dice2();
+      d.tester(1000);
+   }
 }

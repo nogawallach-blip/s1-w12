@@ -2,15 +2,15 @@ import java.util.Random;
 
 public class Dice1{
 
-   private Random randGen;
+   private Random r = new Random ( );;
 
    public Dice1 ( ) {
-      randGen = new Random ( );
+
    }
 
    public int nextRoll( ) {
       // You supply this code.
-	  return -1; 
+	  return r.nextInt(6) + 1; //0-5 --> 1-6
    }
 	
    public void tester (int howMany) {
@@ -23,4 +23,9 @@ public class Dice1{
    }
    
   
+
+   public static void main(String[] args) {
+      Dice1 d = new Dice1();
+      d.tester(3);
+   }
 }

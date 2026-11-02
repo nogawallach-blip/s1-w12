@@ -1,5 +1,6 @@
 public class DiceMain{
     public static void main(String[] args) {
-        new Dice2();
+        Dice2 d2 =  new Dice2();
+        d2.tester(1000);
     }
 }
